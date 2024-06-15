@@ -1,0 +1,46 @@
+.Achi {
+  /* background: #141414; */
+  background-image: linear-gradient(45deg, #000, #292929);
+  width: 100%;
+  padding: 150px 10px;
+  text-align: center;
+  margin: 100px auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.achi_Services {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.achi_Services h4 {
+  color: #40b811;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.Span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.Achi .achi_header {
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/* Media query for screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .achi_Services {
+      grid-template-columns: repeat(1, 1fr); /* Change to one column */
+      gap: 1rem; /* Adjust gap between cards */
+  }
+  
+  .achi_Services h4 {
+      font-size: 24px; /* Decrease font size for better fit */
+  }
+}

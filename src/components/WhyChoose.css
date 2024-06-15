@@ -1,0 +1,94 @@
+.whychoose {
+  padding: 10px;
+  
+}
+.whychoose whychoose_header{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+.whychoose .whychoose_header h1{
+  color: #fff;
+  font-size: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+.whychoose_wrap{
+  width: 85%;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; /* Added for responsiveness */
+}
+.whychoose_content, .whychoose_image { /* Added for responsiveness */
+  width: 100%;
+  margin-bottom: 20px; /* Added for responsiveness */
+}
+.whychoose_content{
+  text-align: center;
+  margin-left: 10px; /* Added for responsiveness */
+}
+.whychoose_content h2{
+  font-size: 30px;
+  color: #40b811;
+}
+.whychoose_content p{
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.whychoose_image{
+  width: 100%;
+}
+.whychoose_image img{
+  width: 100%;
+  height: auto;
+}
+.whychoose_content .whychoose_btn{
+  position: relative;
+  margin-top: 30px;
+  text-decoration: none;
+  border: 2px solid #40b811;
+  font-size: 19px;
+  color: #fff;
+  padding: 13px 16px;
+  display: inline-block;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.whychoose_content .whychoose_btn::before{
+  position: absolute;
+  content: "";
+  border: 1px solid transparent;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+  transition: transform 0.7s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  transition-timing-function: cubic-bezier(0.5, 1.5, 0.4 0.7);
+}
+.whychoose_content .whychoose_btn:hover{
+  color: #fff;
+}
+.whychoose_content .whychoose_btn:hover::before{
+  transform: scaleX(1);
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+  .whychoose_wrap {
+      flex-direction: row;
+  }
+  .whychoose_content, .whychoose_image {
+      width: 50%;
+      margin-bottom: 0;
+  }
+  .whychoose_content {
+      text-align: left;
+  }
+}

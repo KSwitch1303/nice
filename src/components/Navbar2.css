@@ -1,0 +1,25 @@
+.navbar2 {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: #34b80083;
+  /* background-image: linear-gradient(45deg, #000, #383737); */
+  box-shadow: 0 2px 2px rgba(190, 190, 190, 0.1);
+  z-index: 10;
+  padding: 20px 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+.nav_logo{
+  width: 200px;
+  /* height: 30px; */
+}
+@media screen and (max-width: 768px) {
+  .navbar2{
+    padding: 0;
+    height: 70px;
+  }
+}

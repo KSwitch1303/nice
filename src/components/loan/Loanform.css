@@ -1,0 +1,81 @@
+.loanformbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding-bottom: 8px;
+}
+
+.loanformheader {
+  text-align: center;
+}
+.loanformheader h2 {
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+.loanformheader p {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.loanformcontent {
+  min-width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.loanformcontent select{
+  height: 40px;
+  width: 70%;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.loanformcontent input{
+  height: 40px;
+  width: 70%;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+.loanformcontent span{
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 15px;
+  background-image: linear-gradient(45deg, #5fa3f7, #32547e);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loanformcontent p{
+  font-size: 14px;
+  text-align: center;
+  max-width: 70%;
+}
+.loanformbtn {
+  width: 70%;
+  margin-top: 10px;
+  padding: 10px;
+  display: block;
+  font-size: 20px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out .5s;
+}
+.loanformbtn:hover{
+  background-color: grey;
+  color: #fff;
+ }
+ .loanformfooter p {
+  font-size: 11px;
+ }
