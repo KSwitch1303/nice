@@ -30,7 +30,7 @@
   }
   @media only screen and (max-width: 768px) {
     .logHeader img {
-      width: 400px;
+      width: 300px;
     }
     .logHeader h2 {
       font-size: 1.2rem;
@@ -78,6 +78,7 @@
     font-weight: 400;
     border-radius: 6px;
 }
+
 .input-btn{
     height: 50px;
     width: 100%;
@@ -102,8 +103,9 @@
 
 .input input{
     padding: 0 15px;
-    border: 1px solid #cacaca;
+    /* border: 1px solid #cacaca; */
 }
+
 .input-link{
     text-align: center;
     margin-top: 10px;
@@ -120,6 +122,9 @@
 }
 .input-link a:hover{
     text-decoration: underline;
+}
+.form-content input:focus{
+    border: 2px solid #40b811;
 }
 .icon1{
     font-size: 18px;

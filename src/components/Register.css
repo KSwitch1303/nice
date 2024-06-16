@@ -15,6 +15,11 @@
   color: #fff;
   /* box-shadow: 0 15px 20px gray; */
 }
+@media screen and (max-width: 768px) {
+  .register_container {
+    padding: 20px;
+  }
+}
 .register_container h2{
   font-size: 32px;
   font-weight: 600;
@@ -83,6 +88,18 @@
   margin: 5px 0;
 }
 .inputBox input{
+  height: 40px;
+  width: 95%;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  /* color: #fff; */
+}
+.inputBox input:focus{
+  border: 2px solid #40b811;
+}
+.inputBox select{
   height: 40px;
   width: 95%;
   padding: 0 10px;
