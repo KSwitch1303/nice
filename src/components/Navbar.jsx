@@ -6,6 +6,8 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const [width, setWidth] = useState(window.innerWidth);
+  const [display, setDisplay] = useState(true);
 
   // Close the navbar when a link is clicked
   const handleLinkClick = () => {
@@ -22,6 +24,26 @@ const Navbar = () => {
     setIsOpen(false);
   }, [location]);
 
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+    // alert(window.innerWidth)
+    if(window.innerWidth < 800){
+      setDisplay(false);
+    }
+    else{
+      setDisplay(true);
+    }
+}
+useEffect(() => {
+  window.addEventListener('resize', handleWindowSizeChange);
+  return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+  }
+}, []);
+
+useEffect(() => {
+handleWindowSizeChange();
+}, []);
   return (
     <nav className={`navbar ${isOpen ? "open" : ""}`}>
       <div className="nav_toggle" onClick={toggleNavbar}>
@@ -29,7 +51,9 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
-      {/* {isOpen ? <img src="logo.png" alt="Logo" height={"60px"}></img> : null} */}
+      {!display ? (
+        <img src="logo.png" alt="Logo" height={"40px"}></img>
+      ) : null}
 
       {/* <div className="navdrop"> */}
       <ul className={`nav ${isOpen ? "open" : ""}`}>

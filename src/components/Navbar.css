@@ -109,7 +109,7 @@
   top: 50%;
   left: 0;
   width: 100%;
-  background-color: #34b80083;
+  background-color: #1a5a01;
   /* background-image: linear-gradient(45deg, #000, #383737); */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -146,6 +146,7 @@
   .navbar {
     padding: 15px 8%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 70px;
   }
   
   .nav {
