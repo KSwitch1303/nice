@@ -13,7 +13,15 @@ const Payment = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsPending(true);
-    sendRequest()
+    checkAmount()
+  }
+  const checkAmount = () => {
+    if (amount < 10) {
+      alert("Amount must be greater than $10")
+      setIsPending(false)
+    } else{
+      sendRequest()
+    }
   }
   const sendRequest = async () => {
     try {

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Statistics from './Statistics';
 const Mdashcard = () => {
   const navigate = useNavigate();
-  const { sideBar, firstName, lastName, userId, userName, paymentAmount, totalTraded, totalWithdrawn, earnedTotal, regDate, referralCode, referrals } = useContext(UserContext);
+  const { sideBar, firstName, lastName, userId, userName, paymentAmount, totalTraded, totalWithdrawn, earnedTotal, regDate, referralCode, referrals, setLoggedIn } = useContext(UserContext);
   return ( 
     <>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></link>
@@ -65,10 +65,6 @@ const Mdashcard = () => {
           <i class="fa-solid fa-paper-plane"></i>
             <p>Withdraw</p>
           </div>
-          <div onClick={() => navigate('/loan')} className="mcard">
-          <i class="fas fa-hand-holding-usd"></i>
-            <p>Loan</p>
-          </div>
           <div onClick={() => navigate('/settings')} className="mcard">
           <i class="fas fa-cog"></i>
             <p>Settings</p>
@@ -76,7 +72,11 @@ const Mdashcard = () => {
           <div  className="mcard">
           <i class="fa-regular fa-copy"></i>
             <p>copy code</p>
-          </div>  
+          </div> 
+          <div onClick={() => { setLoggedIn(false) }} className="mcard">
+          <i class="fas fa-sign-out-alt"></i>
+            <p>Logout</p>
+          </div> 
         </div>
       </div>
       <Statistics />

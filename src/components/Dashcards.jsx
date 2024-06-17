@@ -175,7 +175,7 @@ const Dashcards = () => {
               </div>
           </div>
           <span class="card-detail">
-                <button>Make A Trade</button>
+          
             </span>
         </div>
    );

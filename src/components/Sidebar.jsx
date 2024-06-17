@@ -40,7 +40,7 @@ const Sidebar = () => {
               {/* <li><Link to="/profile">   <i class="fas fa-user"></i>Profile</Link></li> */}
               <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/statistics">   <i class="fas fa-chart-bar"></i>Statistics</NavLink></li>
               <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/invest">    <i class="fa-solid fa-landmark"></i>Invest</NavLink></li>
-              <li> <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to ='/loan'><i class="fas fa-hand-holding-usd"></i>Loan</NavLink></li>
+              {/* <li> <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to ='/loan'><i class="fas fa-hand-holding-usd"></i>Loan</NavLink></li> */}
               <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/payment">    <i class="fa-solid fa-money-bill"></i>Recharge</NavLink></li>
               <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/withdraw">   <i class="fa-solid fa-paper-plane"></i>Withdraw</NavLink>    </li>
               <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/settings">  <i class="fas fa-cog"></i>settings</NavLink></li>
