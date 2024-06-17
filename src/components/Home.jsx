@@ -19,7 +19,7 @@ const Home = () => {
       <Achievements />
       <Testimonies />
       <TradingPlans />
-      {/* <Myfooter /> */}
+      <Myfooter />
     </div>
    );
 }

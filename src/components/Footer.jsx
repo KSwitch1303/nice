@@ -1,22 +1,21 @@
-import { CFooter } from '@coreui/react'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-
+import './Footer.css'
 const Myfooter = () => {
   return (
-    <CFooter className="px-4">
-      <div>
-        <a href="https://coreui.io" target="_blank" rel="noopener noreferrer">
-          CoreUI
-        </a>
-        <span className="ms-1">&copy; 2024 creativeLabs.</span>
+    <footer className="homefooter">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></link>
+      <div className="left">
+        <img src="fullLogo.png" alt="logo" />
       </div>
-      <div className="ms-auto">
-        <span className="me-1">Powered by</span>
-        <a href="https://coreui.io/react" target="_blank" rel="noopener noreferrer">
-          CoreUI React Admin &amp; Dashboard Template
-        </a>
+      <div className="right">
+        <div className="footericons">
+          <i className="fab fa-telegram"></i>
+          <a href="https://t.me/oneFundSupport" target="_blank" rel="noopener noreferrer">
+          <p>Customer Service</p></a>          
+        </div>
+        <p>Copyright © 2021. All rights reserved.</p>
+        <div className='footerterms'><a href=''>Terms of Service</a>|<a href="">Privacy Policy</a></div>
       </div>
-    </CFooter>
+    </footer>
   );
 }
 

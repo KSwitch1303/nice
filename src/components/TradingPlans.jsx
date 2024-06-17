@@ -5,9 +5,7 @@ function TradingPlans() {
   return (
     <div>
       <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}>
+        >
       <div className="trading_heading" id='tradingplan'>
         <h1>OUR TRADING PLANS</h1>
         <h2>We have different plans designed to achieve various financial Goals ensuring satisfied <br />Services to our clients </h2>

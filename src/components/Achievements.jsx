@@ -5,21 +5,21 @@ const Achievements = () => {
     {
       prefix: "$",
       metric: "MINIMUM INVESTMENT AMOUNT",
-      value: "300",
+      value: "100",
     },
     {
       metric: "TOTAL INVESTORS",
-      value: "57871",
+      value: "257871",
     },
     {
       prefix: "$",
       metric: "TOTAL INVESTED",
-      value: "1212000",
+      value: "631212000",
     },
     {
       prefix: "$",
       metric: "TOTAL WITHDRAWN",
-      value: "1220000",
+      value: "601220000",
     },
   ];
   return ( 
