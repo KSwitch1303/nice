@@ -29,7 +29,7 @@
 
 .stat_container th, .stat_container td {
   padding: 15px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #dee2e6;
 }
 
